@@ -28,7 +28,7 @@ def lambda_handler(event, context):
       action_response = {
         'actionGroup': event['actionGroup'],
         'apiPath': event['apiPath'],
-        'httpMehtod': event['httpMehtod'],
+        'httpMehtod': event['httpMethod'],
         'httpStatusCode': 200,
         'responseBody': response_body
       }
