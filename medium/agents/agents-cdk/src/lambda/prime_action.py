@@ -5,7 +5,7 @@ def lambda_handler(event, context):
   print('Received event: ' + json.dumps(event, indent=2))
 
   api_path = event['apiPath']
-  http_mehtod = event['httpMehtod']
+  http_mehtod = event['httpMethod']
   request_body = event['requestBody']
   props = request_body['content']['application/json']['properties']
 
